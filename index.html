@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subway Suffer</title>
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; /* left | center | right */
+        align-items: center;
+        background: #222;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      .left-text {
+        padding-left: 60px;
+      }
+
+      canvas {
+        display: block;
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div class="left-text">
+      <h1>Subway Suffer</h1>
+      <h2>Run from the zombies!</h2>
+      <p>A simple run and slide mini game</p>
+      <p>Use ← → or A / D to move</p>
+      <p>Grab medkits for health</p>
+      <p>Avoid obstacles</p>
+      <h2>SURVIVE AS LONG AS YOU CAN!</h2>
+    </div>
+
+    <script src="sketch.js"></script>
+
+    <div></div> <!-- empty right side -->
+  </body>
+</html>
